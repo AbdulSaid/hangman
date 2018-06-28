@@ -57,6 +57,7 @@ var losses = 0;
 // Reset our game-level variables
 function resetGame() {
   remainingGuesses = maxTries;
+  gameStarted = false;
 
   // Use Math.floor to round the random number down to the nearest whole.
   currentWordIndex = Math.floor(Math.random() * wordChoice.length);
@@ -105,10 +106,10 @@ function updateDisplay() {
   }
 }
 
-// Updates the image depending on how many guesses (styll fix up)
+// Updates the image depending on how many guesses
 function updateHangmanImage() {
   document.getElementById('hangmanImage').src =
-    'assets/images/' + (maxTries - remainingGuesses) + '.png';
+    'images/' + (maxTries - remainingGuesses) + '.png';
 }
 
 document.onkeydown = function(event) {
