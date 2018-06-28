@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman</title>
+  <link href="css/reset.css" type="stylesheet/css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/Css" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Abdulrahman</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://abdulsaid.github.io/Bootstrap-Portfolio/index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://abdulsaid.github.io/Bootstrap-Portfolio/portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://abdulsaid.github.io/Bootstrap-Portfolio/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container con23">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="display-3">Hangman!</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 gameplay-column">
+        <h2 id="youWinText">YOU WIN! </h2>
+        <img id="youwin-image" src="images/you-win.png" alt="Winning Image" />
+        <h2 id="youLoseText">YOU LOSE! </h2>
+        <img id="gameover-image" src="images/gameover.png" alt="Game Over Image" />
+        <h2 id="pressKeyTryAgain">Press Any Key to Try Again!</h2>
+        <img id="hangmanImage" src="" alt="" />
+      </div>
+
+
+      <div class="col-md-6 gameplay-column">
+        <h2>Press Any Key to Get Started!</h2>
+        <h4>Hint: It's Something about Toronto</h4>
+        <h4>Wins</h4>
+        <h5 id="totalWins"></h5>
+        <h4>Losses</h4>
+        <h5 id="totalLoses"></h5>
+        <h4>Current Word</h4>
+        <h3 id="currentWord"></h3>
+        <h4>Guesses Remaining</h4>
+        <h6 id="remainingGuesses"></h6>
+        <h4>Letters Guessed</h4>
+        <h3 id="guessedLetters"></h3>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
